@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dummy2-11.iml" filepath="$PROJECT_DIR$/.idea/modules/dummy2-11.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dummy2-11-build.iml" filepath="$PROJECT_DIR$/.idea/modules/dummy2-11-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dummy2.11.iml" filepath="$PROJECT_DIR$/.idea/modules/dummy2.11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dummy22.iml" filepath="$PROJECT_DIR$/.idea/modules/dummy22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dummy22-build.iml" filepath="$PROJECT_DIR$/.idea/modules/dummy22-build.iml" />
     </modules>
   </component>
 </project>

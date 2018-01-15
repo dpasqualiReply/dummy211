@@ -1,12 +1,19 @@
+import java.io.File
+
+import com.typesafe.config.ConfigFactory
 import org.apache.spark.sql.SparkSession
+
+import sys.process._
 
 object Dummy {
 
   def main(args: Array[String]): Unit = {
 
-    val spark = SparkSession.builder().master("local[*]").appName("dummy").getOrCreate()
+    val conf = ConfigFactory.load()
+    val valore = conf.getInt("app.variabile")
 
-    val arr = spark.sparkContext.parallelize(Array(1,2,3,4,5,6,7,8,9,10))
+    val spark = SparkSession.builder().master("local[*]").appName("dummy").getOrCreate()
+    val arr = spark.sparkContext.parallelize(Array(valore, valore))
 
     arr.map(a => a*100).foreach(println)
 
