@@ -3,10 +3,10 @@ pipeline {
   stages {
     stage('CD and do stuff') {
       steps {
-        pwd()
-        dir(path: '/opt/cdJenkins') {
-          pwd()
-          sh 'cat file.txt'
+        sh 'pwd'
+        dir(path: '/opt/cdJenkins/') {
+          sh 'pwd'
+          sh 'cat /opt/cdJenkins/file.txt'
         }
         
       }
