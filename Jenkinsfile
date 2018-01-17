@@ -4,7 +4,7 @@ pipeline {
     stage('CD and do stuff') {
       steps {
         sh 'pwd'
-        sh 'cat /opt/cdJenkins/file.txt'
+        sh 'cat src/main/resources/application.conf'
       }
     }
   }
