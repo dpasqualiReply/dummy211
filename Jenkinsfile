@@ -4,7 +4,7 @@ pipeline {
     stage('CD and do stuff') {
       steps {
         sh 'pwd'
-        sh 'cd /opt/cdJenkins/ && sudo cat file.txt'
+        sh 'cd /var/lib/jenkins/workspace/sProduction-BatchETL_master-KI4KS2DPNAHYENXAUXKIMEUOLEJJLZEADNHUJK6DUGL3UYL2ZBEQ && sudo cat build.sbt'
       }
     }
   }
