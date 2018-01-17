@@ -4,7 +4,7 @@ pipeline {
     stage('CD and do stuff') {
       steps {
         sh 'pwd'
-        sh 'cd /opt/cdJenkins && cat file.txt'
+        sh 'cat /opt/cdJenkins/file.txt'
       }
     }
   }
