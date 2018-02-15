@@ -15,7 +15,7 @@ object Dummy {
     val spark = SparkSession.builder().master("local[*]").appName("dummy").getOrCreate()
     val arr = spark.sparkContext.parallelize(Array(valore, valore))
 
-    arr.map(a => a*100).foreach(println)
+    arr.map(a => a*200).foreach(println)
 
   }
 
