@@ -18,5 +18,4 @@ object Dummy {
     arr.map(a => a*200).foreach(println)
 
   }
-
 }
