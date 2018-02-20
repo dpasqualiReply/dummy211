@@ -12,11 +12,11 @@ object IDummy {
     val valore = conf.getInt("app.variabile")
 
     val spark = SparkSession.builder().master("local[*]").appName("dummy").getOrCreate()
-    val arr = spark.sparkContext.parallelize((1 to valore*10000).toSeq)
+    val arr = spark.sparkContext.parallelize((1 to valore*10).toSeq)
 
     val aaa = arr.map(el => (el/0.000012)*(el/0.000012))
 
-    for(i <- 1 to valore*10000){
+    for(i <- 1 to valore*10){
       inefFunc(i, aaa)
     }
 
